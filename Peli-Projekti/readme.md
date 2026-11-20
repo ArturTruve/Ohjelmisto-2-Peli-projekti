@@ -1,0 +1,1 @@
+Tiimin jäsenet: Tomi, Alexei, Alex ja Artur
