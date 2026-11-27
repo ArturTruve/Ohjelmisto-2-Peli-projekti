@@ -53,6 +53,10 @@ def serve_menu():
 def serve_menu_css():
     return send_from_directory(STATIC_DIR, "menu.css")
 
+@app.get("/img/<path:filename>")
+def serve_img(filename: str):
+    return send_from_directory(STATIC_DIR / "img", filename)
+
 
 @app.get("/api/menu")
 def get_menu_data():
